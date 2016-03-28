@@ -1,0 +1,66 @@
+package rest.core;
+
+import java.io.Serializable;
+
+import java.util.Observable;
+
+import rest.textui.food.Message;
+
+import rest.core.alimento.*;
+
+public abstract class Alimento extends Observable implements Serializable {
+
+    //Atributo
+    
+    protected GestorOutlet _outlet;
+    protected String _nome;
+    protected String _tipo;
+    protected double _calorias;
+    
+    //Construtor
+    
+    public Alimento(GestorOutlet outlet, String nome, String tipo) {
+	_outlet = outlet;
+	_nome = nome;
+
+	if(tipo.equals(Message.typeMeat()))
+	    _tipo = Message.typeMeat();
+	else if(tipo.equals(Message.typeFish()))
+	    _tipo = Message.typeFish();
+	else if(tipo.equals(Message.typeVegetable()))
+	    _tipo = Message.typeVegetable();
+	else if(tipo.equals(Message.typeVeg()))
+	    _tipo = Message.typeVeg();
+	else
+	    _tipo = Message.typeNoVeg();
+
+	this.addObserver(outlet);
+    }
+
+    //Get
+    
+    public String getName() {
+	return _nome;
+    }
+
+    public GestorOutlet getOutlet() {
+	return _outlet;
+    }
+    
+    public String getType() {
+	return _tipo;
+    }
+    
+    public double getCalories() {
+	return _calorias;
+    }
+    
+    //Veg
+    
+    public boolean veg() {
+	if(this.getType().equals(Message.typeVeg()) || this.getType().equals(Message.typeVegetable()))
+	    return true;
+	else
+	    return false;
+    }  
+}

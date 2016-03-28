@@ -1,0 +1,25 @@
+package rest.core;
+import rest.core.Outlet;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class AlimentoAgregado extends Alimento {
+	
+    private List<Alimento> _listaAlimentos = new ArrayList<Alimento>();
+    private List<Integer> _percentagemAlimentos = new ArrayList<Integer>();
+
+    public AlimentoAgregado(Outlet outlet, String nome, String tipo, List<Alimento> listaAlimentos, List<Integer> percentagemAlimentos) {
+	_outlet = outlet;
+	_nome = nome;
+	_listaAlimentos.addAll(listaAlimentos);
+	_percentagemAlimentos.addAll(percentagemAlimentos);
+	_tipo = tipo;
+    }	
+
+    @Override
+	public String toString() {
+	return getType() + "|" + getName();
+    }
+    
+}

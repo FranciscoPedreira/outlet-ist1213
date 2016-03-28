@@ -1,0 +1,28 @@
+VEGETABLE|alface|1
+VEGETABLE|tomate|2
+VEGETABLE|cenoura|2
+VEGETABLE|beringela|3
+VEGETABLE|cebola|1
+FISH|linguado|6
+FISH|pescada|5
+FISH|dourada|6
+FISH|robalo|6
+FISH|cherne|6
+FISH|pargo molato|6
+FISH|bacalhau|6
+VEGETABLE|azeite|9
+VEGETABLE|batata|4
+MEAT|carne de porco|14
+MEAT|carne de vaca|10
+MEAT|costeleta de porco|11
+MEAT|lombo de porco|12
+MEAT|perna de frango|9
+PREPARED|cherne grelhado|cherne=100
+PREPARED|salada tomate simples|tomate=100
+PREPARED|salada mista|alface=50|tomate=45|azeite=5
+PREPARED|salada mista especial|alface=45|tomate=30|cenoura=18|cebola=5|azeite=2
+PREPARED|batata palha|batata=78|azeite=22
+PREPARED|linguado grelhado|linguado=97|azeite=3
+PREPARED|porco grelhado|lombo de porco=100
+PREPARED|linguado especial|linguado=70|salada mista especial=27|azeite=3
+PREPARED|linguado muito especial|salada mista especial=27|linguado=70|azeite=3

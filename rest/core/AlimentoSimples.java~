@@ -1,0 +1,22 @@
+package rest.core;
+
+public class AlimentoSimples extends Alimento {
+	
+    private Integer _calorias;
+
+    public AlimentoSimples(Outlet outlet, String tipo, String nome, Integer calorias) {
+	_outlet = outlet;
+	_tipo = tipo;
+	_nome = nome;
+	_calorias = calorias;
+    }
+
+    public Integer getCalories() {
+	return _calorias;
+    }
+
+    @Override
+	public String toString() {
+	return getType() + "|" + getName() + "|" + getCalories();
+    }
+}

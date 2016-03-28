@@ -1,0 +1,208 @@
+Gestão de uma Cadeia de Restaurantes
+1 - Novo
+2 - Abrir
+3 - Guardar
+4 - Guardar Como...
+5 - Gestão de Clientes
+6 - Gestão de Alimentos
+7 - Gestão de Restaurantes
+8 - Consultas
+0 - Sair
+Escolha uma opção: Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: Identificador do cliente (e-mail): Tipo de alerta pretendido (DISCOUNT ou NOVELTY): Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: Identificador do cliente (e-mail): Tipo de alerta pretendido (DISCOUNT ou NOVELTY): Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: Identificador do cliente (e-mail): Tipo de alerta pretendido (DISCOUNT ou NOVELTY): Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: Identificador do cliente (e-mail): Tipo de alerta pretendido (DISCOUNT ou NOVELTY): Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: Identificador do cliente (e-mail): Tipo de alerta pretendido (DISCOUNT ou NOVELTY): Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: Identificador do cliente (e-mail): Tipo de alerta pretendido (DISCOUNT ou NOVELTY): Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: OMNIVOROUS|Eat Everything|all@all.edu|0|0|0
+VEGETARIAN|James T. Kirk|kirk@starfleet.net|0|0|0
+OMNIVOROUS|Darth Vader|vader@imperial.net|0|0|0
+VEGETARIAN|Master Yoda|yoda@jedi.edu|0|0|0
+Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: Gestão de uma Cadeia de Restaurantes
+1 - Novo
+2 - Abrir
+3 - Guardar
+4 - Guardar Como...
+5 - Gestão de Clientes
+6 - Gestão de Alimentos
+7 - Gestão de Restaurantes
+8 - Consultas
+0 - Sair
+Escolha uma opção: Gestão de Restaurantes
+1 - Visualizar restaurantes
+2 - Registar restaurante
+3 - Menu de um restaurante
+0 - Sair
+Escolha uma opção: Identificador do restaurante (nome): Gestão de um Restaurante
+1 - Visualizar pratos do dia
+2 - Criar prato do dia
+3 - Calcular calorias
+4 - Disponibilizar prato do dia
+5 - Indisponibilizar prato do dia
+6 - Alterar desconto
+0 - Sair
+Escolha uma opção: Identificador do prato do dia (nome): Gestão de um Restaurante
+1 - Visualizar pratos do dia
+2 - Criar prato do dia
+3 - Calcular calorias
+4 - Disponibilizar prato do dia
+5 - Indisponibilizar prato do dia
+6 - Alterar desconto
+0 - Sair
+Escolha uma opção: Identificador do prato do dia (nome): desconto a aplicar ao prato do dia (inteiro entre 0 e 100): Gestão de um Restaurante
+1 - Visualizar pratos do dia
+2 - Criar prato do dia
+3 - Calcular calorias
+4 - Disponibilizar prato do dia
+5 - Indisponibilizar prato do dia
+6 - Alterar desconto
+0 - Sair
+Escolha uma opção: Identificador do prato do dia (nome): Gestão de um Restaurante
+1 - Visualizar pratos do dia
+2 - Criar prato do dia
+3 - Calcular calorias
+4 - Disponibilizar prato do dia
+5 - Indisponibilizar prato do dia
+6 - Alterar desconto
+0 - Sair
+Escolha uma opção: Identificador do prato do dia (nome): desconto a aplicar ao prato do dia (inteiro entre 0 e 100): Gestão de um Restaurante
+1 - Visualizar pratos do dia
+2 - Criar prato do dia
+3 - Calcular calorias
+4 - Disponibilizar prato do dia
+5 - Indisponibilizar prato do dia
+6 - Alterar desconto
+0 - Sair
+Escolha uma opção: Gestão de Restaurantes
+1 - Visualizar restaurantes
+2 - Registar restaurante
+3 - Menu de um restaurante
+0 - Sair
+Escolha uma opção: Gestão de uma Cadeia de Restaurantes
+1 - Novo
+2 - Abrir
+3 - Guardar
+4 - Guardar Como...
+5 - Gestão de Clientes
+6 - Gestão de Alimentos
+7 - Gestão de Restaurantes
+8 - Consultas
+0 - Sair
+Escolha uma opção: Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: Identificador do cliente (e-mail): NOVELTY|Está disponível um novo prato do dia: +++salada mista+++. Não quer experimentar hoje?
+DISCOUNT|O prato do dia +++salada mista+++ tem um novo desconto. Aproveite agora!!!
+Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: Identificador do cliente (e-mail): DISCOUNT|O prato do dia +++salada mista+++ tem um novo desconto. Aproveite agora!!!
+DISCOUNT|O prato do dia +++Bifanas+++ tem um novo desconto. Aproveite agora!!!
+Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: Identificador do cliente (e-mail): NOVELTY|Está disponível um novo prato do dia: +++salada mista+++. Não quer experimentar hoje?
+Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: Identificador do cliente (e-mail): NOVELTY|Está disponível um novo prato do dia: +++salada mista+++. Não quer experimentar hoje?
+DISCOUNT|O prato do dia +++salada mista+++ tem um novo desconto. Aproveite agora!!!
+NOVELTY|Está disponível um novo prato do dia: +++Bifanas+++. Não quer experimentar hoje?
+DISCOUNT|O prato do dia +++Bifanas+++ tem um novo desconto. Aproveite agora!!!
+Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: Gestão de uma Cadeia de Restaurantes
+1 - Novo
+2 - Abrir
+3 - Guardar
+4 - Guardar Como...
+5 - Gestão de Clientes
+6 - Gestão de Alimentos
+7 - Gestão de Restaurantes
+8 - Consultas
+0 - Sair
+Escolha uma opção: 

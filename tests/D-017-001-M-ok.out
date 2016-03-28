@@ -1,0 +1,100 @@
+Gestão de uma Cadeia de Restaurantes
+1 - Novo
+2 - Abrir
+3 - Guardar
+4 - Guardar Como...
+5 - Gestão de Clientes
+6 - Gestão de Alimentos
+7 - Gestão de Restaurantes
+8 - Consultas
+0 - Sair
+Escolha uma opção: Gestão de Alimentos
+1 - Visualizar alimentos
+2 - Registar alimento simples
+3 - Registar alimento preparado
+4 - Alterar alimento simples
+5 - Descrever alimento preparado
+0 - Sair
+Escolha uma opção: Nome a dar ao alimento: Identificador do alimento (nome): Percentagem do alimento (inteiro entre 0 e 100): Identificador do alimento (nome): Percentagem do alimento (inteiro entre 0 e 100): Identificador do alimento (nome): Percentagem do alimento (inteiro entre 0 e 100): Identificador do alimento (nome): Percentagem do alimento (inteiro entre 0 e 100): Gestão de Alimentos
+1 - Visualizar alimentos
+2 - Registar alimento simples
+3 - Registar alimento preparado
+4 - Alterar alimento simples
+5 - Descrever alimento preparado
+0 - Sair
+Escolha uma opção: VEGETABLE|alface|1
+VEGETABLE|azeite|9
+VEGETABLE|batata|4
+VEG|batata palha
+MEAT|carne de porco|14
+FISH|linguado|6
+NOVEG|linguado grelhado
+VEG|Salada especial de tomate
+VEG|salada mista
+VEGETABLE|tomate|2
+Gestão de Alimentos
+1 - Visualizar alimentos
+2 - Registar alimento simples
+3 - Registar alimento preparado
+4 - Alterar alimento simples
+5 - Descrever alimento preparado
+0 - Sair
+Escolha uma opção: Identificador do alimento (nome): VEG|Salada especial de tomate
+VEGETABLE|alface|7
+VEGETABLE|tomate|80
+VEGETABLE|azeite|2
+VEGETABLE|batata|11
+Gestão de Alimentos
+1 - Visualizar alimentos
+2 - Registar alimento simples
+3 - Registar alimento preparado
+4 - Alterar alimento simples
+5 - Descrever alimento preparado
+0 - Sair
+Escolha uma opção: Identificador do alimento (nome): Calorias por grama a associar ao alimento (inteiro): Gestão de Alimentos
+1 - Visualizar alimentos
+2 - Registar alimento simples
+3 - Registar alimento preparado
+4 - Alterar alimento simples
+5 - Descrever alimento preparado
+0 - Sair
+Escolha uma opção: VEGETABLE|alface|1
+VEGETABLE|azeite|9
+VEGETABLE|batata|4
+VEG|batata palha
+MEAT|carne de porco|14
+FISH|linguado|6
+NOVEG|linguado grelhado
+VEG|Salada especial de tomate
+VEG|salada mista
+VEGETABLE|tomate|20
+Gestão de Alimentos
+1 - Visualizar alimentos
+2 - Registar alimento simples
+3 - Registar alimento preparado
+4 - Alterar alimento simples
+5 - Descrever alimento preparado
+0 - Sair
+Escolha uma opção: Identificador do alimento (nome): VEG|Salada especial de tomate
+VEGETABLE|alface|7
+VEGETABLE|tomate|80
+VEGETABLE|azeite|2
+VEGETABLE|batata|11
+Gestão de Alimentos
+1 - Visualizar alimentos
+2 - Registar alimento simples
+3 - Registar alimento preparado
+4 - Alterar alimento simples
+5 - Descrever alimento preparado
+0 - Sair
+Escolha uma opção: Gestão de uma Cadeia de Restaurantes
+1 - Novo
+2 - Abrir
+3 - Guardar
+4 - Guardar Como...
+5 - Gestão de Clientes
+6 - Gestão de Alimentos
+7 - Gestão de Restaurantes
+8 - Consultas
+0 - Sair
+Escolha uma opção: 

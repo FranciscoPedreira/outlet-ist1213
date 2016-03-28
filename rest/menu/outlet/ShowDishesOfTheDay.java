@@ -1,0 +1,54 @@
+package rest.menu.outlet;
+
+import rest.core.GestorOutlet;
+import java.util.*;
+import pt.utl.ist.po.ui.Display;
+import java.lang.Object;
+import rest.core.PratoDoDia;
+import pt.utl.ist.po.ui.Command;
+import pt.utl.ist.po.ui.Form;
+import pt.utl.ist.po.ui.InputString;
+import pt.utl.ist.po.ui.InvalidOperation;
+
+import rest.textui.outlet.MenuEntry;
+import rest.textui.outlet.Message;
+
+/**
+ * This class implements the command that shows all dishes of the day available
+ * in the outlet
+ *
+ * @version 1.0
+ * @author PO
+ **/
+
+public class ShowDishesOfTheDay extends Command<GestorOutlet> {
+    public ShowDishesOfTheDay(GestorOutlet outlet) {
+	super(false, MenuEntry.SHOW_DISHES_OF_THE_DAY, outlet);
+    }
+
+    class CompareNome implements Comparator<PratoDoDia> {
+	public int compare(PratoDoDia r1, PratoDoDia r2) {
+	    String n1 = r1.getAlimento().getName();
+	    String n2 = r2.getAlimento().getName();
+
+	    return n1.compareToIgnoreCase(n2);
+	}
+    }
+    
+    /**
+     * @see pt.utl.ist.po.ui.Command#execute()
+     **/
+    @Override
+	public void execute() throws InvalidOperation {
+	Display d= new Display();
+	List<PratoDoDia> pratosOrdenados = entity().getDishOfTheDay();
+	List<String> nomePratos = new ArrayList<String>();
+	Collections.sort(pratosOrdenados, new CompareNome());
+	for (PratoDoDia pdd: pratosOrdenados)
+	    if(!nomePratos.contains(pdd.getAlimento().getName())){
+		nomePratos.add(pdd.getAlimento().getName());
+		d.addNewLine(pdd.showDishInOutlet());
+	    }	
+	d.display();
+    }
+}

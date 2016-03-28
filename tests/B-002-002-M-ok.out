@@ -1,0 +1,106 @@
+Gestão de uma Cadeia de Restaurantes
+1 - Novo
+2 - Abrir
+3 - Guardar
+4 - Guardar Como...
+5 - Gestão de Clientes
+6 - Gestão de Alimentos
+7 - Gestão de Restaurantes
+8 - Consultas
+0 - Sair
+Escolha uma opção: Ficheiro a abrir: Gestão de uma Cadeia de Restaurantes
+1 - Novo
+2 - Abrir
+3 - Guardar
+4 - Guardar Como...
+5 - Gestão de Clientes
+6 - Gestão de Alimentos
+7 - Gestão de Restaurantes
+8 - Consultas
+0 - Sair
+Escolha uma opção: Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: VEGETARIAN|James T. Kirk|kirk@starfleet.net|0|0|0
+OMNIVOROUS|Darth Vader|vader@imperial.net|0|0|0
+VEGETARIAN|Master Yoda|yoda@jedi.edu|0|0|0
+Gestão de Clientes
+1 - Visualizar clientes
+2 - Registar cliente
+3 - Alterar tipo
+4 - Inscrever em lista
+5 - Remover de lista
+6 - Listar mensagens
+0 - Sair
+Escolha uma opção: Gestão de uma Cadeia de Restaurantes
+1 - Novo
+2 - Abrir
+3 - Guardar
+4 - Guardar Como...
+5 - Gestão de Clientes
+6 - Gestão de Alimentos
+7 - Gestão de Restaurantes
+8 - Consultas
+0 - Sair
+Escolha uma opção: Gestão de Alimentos
+1 - Visualizar alimentos
+2 - Registar alimento simples
+3 - Registar alimento preparado
+4 - Alterar alimento simples
+5 - Descrever alimento preparado
+0 - Sair
+Escolha uma opção: VEGETABLE|alface|1
+VEGETABLE|azeite|9
+VEGETABLE|batata|4
+VEG|batata palha
+MEAT|carne de porco|14
+FISH|linguado|6
+NOVEG|linguado grelhado
+VEG|salada mista
+VEGETABLE|tomate|2
+Gestão de Alimentos
+1 - Visualizar alimentos
+2 - Registar alimento simples
+3 - Registar alimento preparado
+4 - Alterar alimento simples
+5 - Descrever alimento preparado
+0 - Sair
+Escolha uma opção: Gestão de uma Cadeia de Restaurantes
+1 - Novo
+2 - Abrir
+3 - Guardar
+4 - Guardar Como...
+5 - Gestão de Clientes
+6 - Gestão de Alimentos
+7 - Gestão de Restaurantes
+8 - Consultas
+0 - Sair
+Escolha uma opção: Gestão de Restaurantes
+1 - Visualizar restaurantes
+2 - Registar restaurante
+3 - Menu de um restaurante
+0 - Sair
+Escolha uma opção: All Pizza|0|0
+All you want|0|0
+Feel light|0|0
+Gestão de Restaurantes
+1 - Visualizar restaurantes
+2 - Registar restaurante
+3 - Menu de um restaurante
+0 - Sair
+Escolha uma opção: Gestão de uma Cadeia de Restaurantes
+1 - Novo
+2 - Abrir
+3 - Guardar
+4 - Guardar Como...
+5 - Gestão de Clientes
+6 - Gestão de Alimentos
+7 - Gestão de Restaurantes
+8 - Consultas
+0 - Sair
+Escolha uma opção: 

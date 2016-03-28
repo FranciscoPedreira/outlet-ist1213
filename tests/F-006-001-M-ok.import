@@ -1,0 +1,19 @@
+VEGET|James T. Kirk|kirk@starfleet.net
+OMNIV|Darth Vader|vader@imperial.net
+VEGET|Master Yoda|yoda@jedi.edu
+RESTAURANT|All Pizza|apizza@google.com
+RESTAURANT|Feel light|feelight@europe.com
+RESTAURANT|All you want|ALLyouWANT@lisbonweek.net
+VEGETABLE|alface|1
+VEGETABLE|tomate|2
+FISH|linguado|6
+VEGETABLE|azeite|9
+VEGETABLE|batata|4
+MEAT|carne de porco|14
+PREPARED|salada mista|alface=50|tomate=45|azeite=5
+PREPARED|batata palha|batata=78|azeite=22
+PREPARED|linguado grelhado|linguado=97|azeite=3
+DOTD|All you want|linguado grelhado|250|10|0
+DOTD|Feel light|linguado grelhado|220|12|20
+DOTD|Feel light|salada mista|100|2|20
+DOTD|All you want|alface|115|5|0

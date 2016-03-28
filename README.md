@@ -1,0 +1,3 @@
+Application to manage and use an outlet of restaurants. This application is composed of two main parts: management application and sales application.
+The management application conducts operations for food, restaurant and client management. It also allows the publication of the menus of the different restaurants.
+The sales application allows the clients to choose and order the available dishes. The client can also register to receive any changes that occur to their chosen dishes.

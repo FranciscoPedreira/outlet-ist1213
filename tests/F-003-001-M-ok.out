@@ -1,0 +1,56 @@
+Gestão de uma Cadeia de Restaurantes
+1 - Novo
+2 - Abrir
+3 - Guardar
+4 - Guardar Como...
+5 - Gestão de Clientes
+6 - Gestão de Alimentos
+7 - Gestão de Restaurantes
+8 - Consultas
+0 - Sair
+Escolha uma opção: Gestão de Restaurantes
+1 - Visualizar restaurantes
+2 - Registar restaurante
+3 - Menu de um restaurante
+0 - Sair
+Escolha uma opção: Identificador do restaurante (nome): Gestão de um Restaurante
+1 - Visualizar pratos do dia
+2 - Criar prato do dia
+3 - Calcular calorias
+4 - Disponibilizar prato do dia
+5 - Indisponibilizar prato do dia
+6 - Alterar desconto
+0 - Sair
+Escolha uma opção: Identificador do alimento (nome): Quantidade do alimento (inteiro): Preço do prato do dia (inteiro): Gestão de um Restaurante
+1 - Visualizar pratos do dia
+2 - Criar prato do dia
+3 - Calcular calorias
+4 - Disponibilizar prato do dia
+5 - Indisponibilizar prato do dia
+6 - Alterar desconto
+0 - Sair
+Escolha uma opção: NOVEG|carne de porco|8|0|UNAVAILABLE
+Gestão de um Restaurante
+1 - Visualizar pratos do dia
+2 - Criar prato do dia
+3 - Calcular calorias
+4 - Disponibilizar prato do dia
+5 - Indisponibilizar prato do dia
+6 - Alterar desconto
+0 - Sair
+Escolha uma opção: Gestão de Restaurantes
+1 - Visualizar restaurantes
+2 - Registar restaurante
+3 - Menu de um restaurante
+0 - Sair
+Escolha uma opção: Gestão de uma Cadeia de Restaurantes
+1 - Novo
+2 - Abrir
+3 - Guardar
+4 - Guardar Como...
+5 - Gestão de Clientes
+6 - Gestão de Alimentos
+7 - Gestão de Restaurantes
+8 - Consultas
+0 - Sair
+Escolha uma opção: 

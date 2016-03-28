@@ -1,0 +1,57 @@
+package rest.menu.manager.restaurant;
+
+import java.io.IOException;
+
+import pt.utl.ist.po.ui.Command;
+import pt.utl.ist.po.ui.Display;
+import pt.utl.ist.po.ui.Form;
+import pt.utl.ist.po.ui.InputString;
+import pt.utl.ist.po.ui.InputInteger;
+import pt.utl.ist.po.ui.InputBoolean;
+import pt.utl.ist.po.ui.InvalidOperation;
+
+import rest.core.Restaurante;
+import rest.core.PratoDoDia;
+import rest.core.Alimento;
+
+import rest.textui.restaurant.*;
+
+
+/**
+ * Class <code>RegisterDishOfTheDay</code> is a command for creating
+ * a dish of the day.
+ *
+ * @version 1.0
+ * @author PO
+ **/
+
+public class RegisterDishOfTheDay extends Command<Restaurante> {
+    /**
+     */
+    public RegisterDishOfTheDay(Restaurante restaurante) {
+	super(false, MenuEntry.CREATE_DISH_OF_THE_DAY, restaurante);
+    }
+    
+    /**
+     * @see pt.utl.ist.po.ui.Command#execute()
+     **/
+    @Override
+	public final void execute() throws InvalidOperation {
+	boolean nomeIgual = false;
+	boolean veg = false;
+	Form f = new Form();
+	InputString nameFood = new InputString(f, Message.reqFoodKey());
+	InputInteger foodQuantity = new InputInteger(f, Message.reqQuantity());
+	InputInteger foodPrice = new InputInteger(f, Message.reqPrice());
+	f.parse();
+	for(Alimento alimento: entity().getAlimentos()) {
+	    if(alimento.getName().equals(nameFood.value())) {
+		nomeIgual = true;
+		entity().adicionaPratoDoDia(new PratoDoDia(entity(),alimento,foodQuantity.value(),foodPrice.value()));
+		break;
+	    }	    
+	}
+	if(!nomeIgual)
+	    throw new InvalidKeyException(nameFood.value());						
+    }
+}

@@ -1,0 +1,194 @@
+package rest.core;
+
+import java.util.*;
+
+import java.io.*;
+
+import rest.textui.clients.Message;
+
+import rest.core.alimento.*;
+
+public class Outlet implements Serializable{
+
+    private List<Alimento> _alimentos;
+    private List<PratoDoDia> _pratosDoDia;
+    private List<Cliente> _clientes;
+    private List<Restaurante> _restaurantes;
+    String _nomeDoFicheiro;
+    boolean _alteracao; 
+	
+    public Outlet() {
+	_alimentos = new ArrayList<Alimento>();
+	_pratosDoDia = new ArrayList<PratoDoDia>();
+	_clientes = new ArrayList<Cliente>();
+	_restaurantes = new ArrayList<Restaurante>();
+	_nomeDoFicheiro = "";
+	_alteracao = false;
+    }
+
+    public List<Cliente> getClientes() {
+	return _clientes;
+    }
+
+    public List<Restaurante> getRestaurants() {
+	return _restaurantes;
+    }
+
+    public List<Alimento> getFood() {
+	return _alimentos;
+    }
+
+    public List<PratoDoDia> getDishOfTheDay(){
+	return _pratosDoDia;
+    }
+
+    public String getNomeDoFicheiro() {
+	return _nomeDoFicheiro;
+    }
+
+    public boolean getAlteracao() {
+	return _alteracao;
+    }
+
+    public void adicionaAlimento(Alimento alimento){
+	_alimentos.add(alimento);
+	setAlteracao(true);
+    }
+
+    public void adicionaPratoDoDia(PratoDoDia pratoDoDia){
+	_pratosDoDia.add(pratoDoDia);
+	setAlteracao(true);
+    }
+
+    public void adicionaCliente(Cliente cliente){
+	_clientes.add(cliente);
+	setAlteracao(true);
+    }
+
+    public void adicionaRestaurante(Restaurante restaurante){
+	_restaurantes.add(restaurante);
+	setAlteracao(true);
+    }
+
+    public void setNomeDoFicheiro(String nomeDoFicheiro) {
+	_nomeDoFicheiro = nomeDoFicheiro;
+    }
+
+    public void setAlteracao(boolean alteracao) {
+	_alteracao = alteracao;
+    }
+
+    public void parseInputFile(String file) {
+	try {
+	    BufferedReader in = new BufferedReader(new FileReader(file));
+	    String s;
+
+	    while((s = in.readLine())!= null) {
+		String line = new String(s.getBytes(), "UTF-8");
+		String[] split = line.split("\\|");
+
+		if(split[0].equals("VEGET") || split[0].equals("OMNIV")) {
+		    String nome = String.valueOf(split[1]);
+		    String email = String.valueOf(split[2]);
+
+		    if(split[0].equals("VEGET"))
+			adicionaCliente(new Cliente(this, email, nome, Message.clientTypeVegetarian()));
+		    else
+			adicionaCliente(new Cliente(this, email, nome, Message.clientTypeOmnivorous()));
+		}
+
+		if(split[0].equals("RESTAURANT")) {
+		    String nome = String.valueOf(split[1]);
+		    String email = String.valueOf(split[2]);
+		    adicionaRestaurante(new Restaurante(this, nome, email));
+		}
+
+		if(split[0].equals(rest.textui.food.Message.typeVegetable()) || split[0].equals(rest.textui.food.Message.typeFish()) || split[0].equals(rest.textui.food.Message.typeMeat())) {
+		    String nome = String.valueOf(split[1]);
+		    int calorias = Integer.valueOf(split[2]);
+		    adicionaAlimento(new AlimentoSimples(this, split[0], nome, calorias));
+		}
+		
+		if(split[0].equals("PREPARED")) {
+		    List<Alimento> alimentos = new ArrayList<Alimento>();
+		    List<Integer> percentagens = new ArrayList<Integer>();
+		    String nome = String.valueOf(split[1]);
+		    String tipo = new String();
+		    int i = 2, percentagemTotal = 0;
+		    do {
+			String[] token = split[i].split("\\=");
+			for(Alimento a : this.getFood()) {
+			    if(a.getName().equals(token[0])) {
+				alimentos.add(a);
+				percentagens.add(Integer.parseInt(token[1]));
+				percentagemTotal += Integer.parseInt(token[1]);
+				i++;
+				break;
+			    }
+			}
+		    } while(percentagemTotal < 100);
+
+		    for(Alimento a : alimentos) {
+			if(a instanceof AlimentoSimples) {
+			    if(a.getType().equals(rest.textui.food.Message.typeVegetable()))
+				tipo = rest.textui.food.Message.typeVeg();
+			    else {
+				tipo = rest.textui.food.Message.typeNoVeg();
+				break;
+			    }
+			}
+			else if(a instanceof AlimentoAgregado) {
+		
+			    if(tipo.equals(rest.textui.food.Message.typeNoVeg()))
+				break;
+			    else
+				tipo = a.getType();
+			}
+		    }
+		    adicionaAlimento(new AlimentoAgregado(this, nome, tipo, alimentos, percentagens));
+		}
+		    
+		if(split[0].equals("DOTD")) {
+		    String restaurante = String.valueOf(split[1]);
+		    String nome = String.valueOf(split[2]);
+		    int quantidade = Integer.valueOf(split[3]);
+		    int preco = Integer.valueOf(split[4]);
+		    int desconto = Integer.valueOf(split[5]);
+
+		    for(Restaurante r : this.getRestaurants()) {
+			if(r.getName().equals(restaurante)) {
+			    for(Alimento a : this.getFood()) {
+				if(a.getName().equals(nome)) {
+				    r.adicionaPratoDoDia(new PratoDoDia(r,a,quantidade, preco, desconto));
+				    break;
+				}
+			    }
+			}
+		    }
+		}
+	    }
+	} catch(IOException e) {
+	    System.err.println(rest.textui.manager.Message.fileNotFound(file));
+	}
+    }    
+    
+    public void abrir(String file) throws IOException, ClassNotFoundException{
+	ObjectInputStream in = new ObjectInputStream(new FileInputStream(file));
+
+	Outlet outlet = (Outlet)in.readObject();
+	in.close();
+	_nomeDoFicheiro = outlet.getNomeDoFicheiro();
+	_alimentos = outlet.getFood();
+	_pratosDoDia = outlet.getDishOfTheDay();
+	_clientes = outlet.getClientes();
+	_restaurantes = outlet.getRestaurants();
+    }
+
+    public void guardar(String file) throws IOException {
+	ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file));
+	  
+	out.writeObject(this);
+	out.close();
+    }
+}
+

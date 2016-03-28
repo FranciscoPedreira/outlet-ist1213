@@ -1,0 +1,41 @@
+package rest.menu.manager.client;
+
+/**
+ * This class implements the command that shows all alerts for a given client.
+ *
+ * @version 1.0
+ * @author PO
+ **/
+
+import pt.utl.ist.po.ui.Command;
+import pt.utl.ist.po.ui.Display;
+import pt.utl.ist.po.ui.Form;
+import pt.utl.ist.po.ui.InputString;
+import pt.utl.ist.po.ui.InvalidOperation;
+
+import rest.core.GestorOutlet;
+import rest.core.Alerta;
+
+import rest.textui.DuplicateKeyException;
+import rest.textui.clients.MenuEntry;
+import rest.textui.clients.Message;
+
+public class ShowClientAlerts extends Command<GestorOutlet> {
+    public ShowClientAlerts(GestorOutlet outlet) {
+	super(false, MenuEntry.SHOW_ALERTS, outlet);
+    }
+
+    /**
+     * @see pt.utl.ist.po.ui.Command#execute()
+     **/
+    @Override
+	public void execute() throws InvalidOperation {
+	Form f = new Form();
+	Display d = new Display();
+	InputString email = new InputString(f, Message.reqKey());
+	f.parse();
+	for(Alerta a : entity().getCliente(email.value()).getInbox())
+	    d.addNewLine(a.toString());
+	d.display();
+    }
+}
